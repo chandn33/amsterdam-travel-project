@@ -1,0 +1,118 @@
+body {
+    font-family: poppins, sans-serif;
+    background: #1f0c09;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+}
+.open-source {
+    color: #c0bfbf;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: Courier;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.3)),
+    url("../images/amsterdam2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+header h1 {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    color: #c0bfbf;
+    margin: 30px 0;
+}
+header h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+header h2, h3 {
+    line-height: 1.5;
+    text-align: center;
+    color: #c0bfbf;
+    margin: 0;
+}
+h3 {
+    letter-spacing: 5px;
+    font-size: 24px;
+    font-weight: 700;
+}
+header a {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    background: #c0bfbf;
+    color: #1f0c09;
+    padding: 10px 24px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 32px;
+}
+footer {
+    color: #c0bfbf; 
+    background-image: linear-gradient(rgba(37, 22, 22, 0.6), rgba(49, 15, 10, 0.6)), url("../images/amsterdam4.png");
+ background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+footer p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    opacity: 0.7;
+    margin-right: 20px;
+}
+footer ul {
+    padding: 0;
+}
+footer li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer a {
+    color: #c0bfbf; 
+    opacity: 0.7;
+}
+footer h4 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+
+}
+@media (max-width: 960px) {
+    header {
+        padding: 60px 0;
+    }
+    header h1 {
+        font-size: 45px;
+    }
+    header h2 {
+        font-size: 20px;
+    }
+    header h3 {
+        font-size: 15px;
+    }
+    header a {
+        font-size: 12px;
+    }
+}
