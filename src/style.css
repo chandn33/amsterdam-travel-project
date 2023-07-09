@@ -13,6 +13,9 @@ section.secondary {
     max-width: 1200px;
     margin: 0 auto;
 }
+.gallery img {
+    border-radius: 5px;
+}
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
@@ -30,10 +33,6 @@ section.secondary {
 .img-responsive {
     width: 100%;
     display: block;
-}
-.video {
-    max-width: 100%;
-    aspect-ratio: 16/9;
 }
 .card {
     background-color: #e0dfdf;
@@ -119,6 +118,9 @@ header a {
     background: #e0dfdf;
     color: #1f0c09;
 }
+img {
+    border-radius: 5px;
+}
 main {
     background-color: #e0dfdf;
 }
@@ -154,10 +156,6 @@ main h5 {
     color: #1f0c09;
     margin: 0;
     line-height: 1;
-}
-.video {
-    max-width: 100%;
-    aspect-ratio: 16/9;
 }
 footer {
     color:#e0dfdf;
