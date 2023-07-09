@@ -160,7 +160,7 @@ footer {
     background-image: linear-gradient(rgba(37, 22, 22, 0.6), rgba(49, 15, 10, 0.6)), url("../images/amsterdam4.png");
  background-repeat: no-repeat;
     background-size: cover;
-    padding: 20px 40px;
+     padding: 15px 20px;
 }
 footer p {
     font-weight: 400;
