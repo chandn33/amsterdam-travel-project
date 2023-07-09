@@ -219,4 +219,9 @@ footer h4 {
     .embed {
         aspect-ratio: 16/9;
     }
+    .gallery.grid-3-columns img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
 }
