@@ -2,7 +2,6 @@ body {
     font-family: poppins, sans-serif;
     background: #1f0c09;
 }
-
 section {
     margin: 0 auto;
     padding: 100px;
@@ -29,8 +28,12 @@ section.secondary {
     grid-template-columns: 1fr 1fr 1fr;
 }
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
     display: block;
+}
+.video {
+    max-width: 100%;
+    aspect-ratio: 16/9;
 }
 .card {
     background-color: #e0dfdf;
@@ -44,7 +47,13 @@ section.secondary {
 }
 .card-body {
     padding: 30px;
-
+}
+.card-header.grid {
+    grid-gap: 0;
+}
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
 }
 .btn {
     display: block;
@@ -58,12 +67,6 @@ section.secondary {
     padding: 16px;
     text-decoration: none;
 }
-.open-source {
-    color: #e0dfdf;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Courier;
-}
 .text-center {
     text-align:center;
 }
@@ -73,6 +76,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0;
+    text-align: center;
 }
 header h1 {
     font-size: 65px;
@@ -102,18 +106,18 @@ header h3 {
     font-weight: 700;
 }
 header a {
+    font-weight: 700;
     text-align: center;
-    letter-spacing: 3px;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 15px;
     line-height: 1.5;
     text-transform: uppercase;
-    background: #e0dfdf;
-    color: #1f0c09;
     padding: 10px 24px;
+    margin-top: 32px;
+    letter-spacing: 3px;
     text-decoration: none;
     display: inline-block;
-    margin-top: 32px;
+    background: #e0dfdf;
+    color: #1f0c09;
 }
 main {
     background-color: #e0dfdf;
@@ -152,15 +156,16 @@ main h5 {
     line-height: 1;
 }
 .video {
-    width: 100%;
+    max-width: 100%;
     aspect-ratio: 16/9;
 }
 footer {
     color:#e0dfdf;
-    background-image: linear-gradient(rgba(37, 22, 22, 0.6), rgba(49, 15, 10, 0.6)), url("../images/amsterdam4.png");
+    background-image: linear-gradient(rgba(37, 22, 22, 0.6), rgba(49, 15, 10, 0.6)),
+    url("../images/amsterdam4.png");
  background-repeat: no-repeat;
     background-size: cover;
-     padding: 15px 20px;
+     padding: 40px 0;
 }
 footer p {
     font-weight: 400;
@@ -184,7 +189,7 @@ footer h4 {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    margin-top:50px;
+    margin-top:20px;
 
 }
 @media (max-width: 960px) {
@@ -209,5 +214,11 @@ footer h4 {
     }
     section {
         padding: 30px;
+    }
+    .card-header img {
+        display: none;
+    }
+    .embed {
+        aspect-ratio: 16/9;
     }
 }
