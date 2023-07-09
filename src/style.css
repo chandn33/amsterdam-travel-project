@@ -151,6 +151,10 @@ main h5 {
     margin: 0;
     line-height: 1;
 }
+.video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
 footer {
     color:#e0dfdf;
     background-image: linear-gradient(rgba(37, 22, 22, 0.6), rgba(49, 15, 10, 0.6)), url("../images/amsterdam4.png");
