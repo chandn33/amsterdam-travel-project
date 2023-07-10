@@ -13,9 +13,6 @@ section.secondary {
     max-width: 1200px;
     margin: 0 auto;
 }
-.gallery img {
-    border-radius: 5px;
-}
 .grid {
     display: grid;
     grid-template-columns: 1fr 2fr 2fr;
@@ -30,9 +27,9 @@ section.secondary {
 .grid-3-columns {
     grid-template-columns: 1fr 1fr 1fr;
 }
-.img-responsive {
-    width: 100%;
-    display: block;
+.card img {
+    border-radius: 0;
+    height: 153px;
 }
 .card {
     background-color: #e0dfdf;
@@ -68,6 +65,18 @@ section.secondary {
 }
 .text-center {
     text-align:center;
+}
+.main-amsterdam {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+.grid-2-columns img {
+        width: 100%;
+        display: block;
+}
+.gallery.grid-3-columns img {
+    border-radius: 5px;
 }
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.3)),
@@ -118,9 +127,6 @@ header a {
     background: #e0dfdf;
     color: #1f0c09;
 }
-img {
-    border-radius: 5px;
-}
 main {
     background-color: #e0dfdf;
 }
@@ -163,7 +169,7 @@ footer {
     url("../images/amsterdam4.png");
  background-repeat: no-repeat;
     background-size: cover;
-     padding: 40px 0;
+    padding: 0;
 }
 footer p {
     font-weight: 400;
@@ -187,10 +193,17 @@ footer h4 {
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    margin-top:20px;
-
+    margin-top: 20px;
 }
-@media (max-width: 960px) {
+.open-source {
+    font-family: courier;
+    font-size: 14px;
+    font-weight: bold;
+    color: grey;
+    background-image: none;
+    padding: 0;
+}
+@media (max-width: 950px) {
     header {
         padding: 60px 0;
     }
@@ -221,7 +234,7 @@ footer h4 {
     }
     .gallery.grid-3-columns img {
         width: 100%;
-        height: auto;
+        height: 200;
         object-fit: cover;
     }
 }
